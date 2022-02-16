@@ -1,0 +1,20 @@
+.entry__change-line {
+display: block;
+border: none;
+border-bottom: 2px solid #cccccc;
+margin: 0 auto 30px;
+min-width: 358px;
+padding-bottom: 13px;
+font-size: 14px;
+line-height: 117%;
+background-color: black;
+color: #cccccc;
+}
+
+.entrance-page__change-line::-webkit-input-placeholder {
+color: #cccccc;
+}
+
+.entrance-page__change-line::-moz-placeholder {
+color: #cccccc;
+}

@@ -1,0 +1,7 @@
+.element__about{
+    display: flex;
+    background-color: #fff;
+    height: 79px;
+    width: 282px;
+    border-radius: 0 0 15px 15px;
+}

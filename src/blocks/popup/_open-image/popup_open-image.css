@@ -1,0 +1,10 @@
+.popup_open-image{
+    background: #000000e6;
+    height: 100%;
+}
+
+.popup_open-image.open-image{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}

@@ -1,0 +1,19 @@
+.error {
+    color: red;
+    opacity: 1;
+    position: absolute;
+    top: 150px;
+    left: 36px;
+    transition: 0.3s;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+@media screen and (max-width: 500px) {
+    .error{
+        top: 160px;
+        left: 20px;
+    }
+}
