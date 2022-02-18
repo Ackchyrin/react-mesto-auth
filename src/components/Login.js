@@ -17,10 +17,6 @@ function Login({handleLogin}){
     function handleSubmit(event){
         event.preventDefault();
         handleLogin(userData);
-        setUserData({
-            email:"",
-            password:""
-        });
     }
 
     return(

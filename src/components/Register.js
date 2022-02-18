@@ -32,7 +32,7 @@ function Register({handleRegister}){
             </form>
             <p className="entry__text">
                 Уже зарегистрованы?{" "}
-                <Link className="entry__text">Войти</Link>
+                <Link className="entry__text" to="/sign-in">Войти</Link>
             </p>
         </div>
     );

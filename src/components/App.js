@@ -23,7 +23,7 @@ function App() {
   const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = useState(false);
   const [isViewOpen, setViewOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState({});
-  const [currentUser, setCurrentUser] = useState([]);
+  const [currentUser, setCurrentUser] = useState({});
   const [cards, setCards] = useState([]);
   const [loggedIn, setLoggedIn] = React.useState(false);
   const [email, setEmail] = React.useState("");
@@ -107,9 +107,9 @@ function App() {
     }
     register(userData.email, userData.password)
       .then((res) => {
-        history.push("./sign-in");
         setRegisterStatus(true);
-        setInfoTooltipPopupOpen(true);
+        setInfoTooltipPopupOpen(false);
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
@@ -121,6 +121,7 @@ function App() {
   function signOut() {
     localStorage.removeItem("token");
     setMobileAuth(false);
+    setLoggedIn(false);
   }
 
   function handleLogin(userData) {
