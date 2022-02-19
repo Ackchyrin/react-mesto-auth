@@ -1,9 +1,8 @@
 import React from "react";
-import { useLocation, Link, Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import mestoLogo from "../images/header-logo.svg"
 
 function Header({signOut, email}){
-    const location = useLocation();
 
     return(
         <header className="header">

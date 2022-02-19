@@ -109,6 +109,8 @@ function App() {
       .then((res) => {
         setRegisterStatus(true);
         setInfoTooltipPopupOpen(false);
+        setLoggedIn(true);
+        handleLogin(userData);
         history.push("/");
       })
       .catch((err) => {
